@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bearer Forge | Sovereign Protocol Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-yellow-600 rounded-lg flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <span class="text-xl font-black text-white tracking-tight uppercase">Bearer Forge</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-400">
+                <a href="#value" class="hover:text-yellow-500 transition-colors">Value Prop</a>
+                <a href="#architecture" class="hover:text-yellow-500 transition-colors">Architecture</a>
+                <a href="#roi" class="hover:text-yellow-500 transition-colors">ROI Calc</a>
+                <a href="#roadmap" class="hover:text-yellow-500 transition-colors">Roadmap</a>
+                <a href="#contact" class="px-5 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 transition-all">Partner Portal</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center px-4 py-2 rounded-full border border-yellow-600/30 bg-yellow-600/10 text-yellow-500 text-xs font-bold uppercase tracking-widest mb-8">
+                <span class="w-2 h-2 rounded-full bg-yellow-500 mr-2 animate-pulse"></span>
+                White Paper v3.2 Now Available
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black text-white mb-8 leading-tight">
+                Cryptographic Determinism for <span class="text-yellow-500">Sovereign Assets</span>
+            </h1>
+            <p class="text-xl text-slate-400 mb-12 max-w-3xl mx-auto">
+                Bearer Forge transforms legacy state registries into autonomous, self-regulating cryptographic networks, bridging the gap between decentralized sovereignty and mandatory state compliance.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#contact" class="px-8 py-4 bg-yellow-600 text-white font-bold rounded-xl hover:bg-yellow-700 shadow-lg shadow-yellow-900/20 flex items-center justify-center transition-all">
+                    Initiate Partnership
+                </a>
+                <a href="#" onclick="alert('Downloading White Paper v3.2 PDF...')" class="px-8 py-4 bg-slate-800 text-white font-bold rounded-xl hover:bg-slate-700 border border-slate-700 flex items-center justify-center transition-all">
+                    <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    Download White Paper
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Value Prop -->
+    <section id="value" class="py-20 bg-slate-900 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-16 text-center">Executive Value Proposition</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-slate-950 rounded-2xl border border-slate-800 hover:border-yellow-600 transition-all">
+                    <h3 class="text-xl font-bold text-white mb-4">Zero Administrative Backlog</h3>
+                    <p class="text-slate-400">The Autonomous Synthetic Agent SDK automates compliance checks and lien releases, removing manual processing queues entirely.</p>
+                </div>
+                <div class="p-8 bg-slate-950 rounded-2xl border border-slate-800 hover:border-yellow-600 transition-all">
+                    <h3 class="text-xl font-bold text-white mb-4">Guaranteed Revenue</h3>
+                    <p class="text-slate-400">Transfer taxes and fees are mathematically enforced at the protocol level. Transaction clearing is contingent on Treasury routing.</p>
+                </div>
+                <div class="p-8 bg-slate-950 rounded-2xl border border-slate-800 hover:border-yellow-600 transition-all">
+                    <h3 class="text-xl font-bold text-white mb-4">Absolute Custody</h3>
+                    <p class="text-slate-400">Replace siloed paper records with Regulated Virtual Bearer Instruments (RVBIs) providing instant, absolute proof of ownership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Architecture (NEW) -->
+    <section id="architecture" class="py-20 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="flex-1">
+                    <h2 class="text-3xl font-bold text-white mb-6">The Dual-Path Execution Matrix</h2>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        The core patent-pending innovation of Bearer Forge. We compile legacy property records into dynamic UTXO logic scripts featuring two mutually exclusive execution paths.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <div>
+                                <span class="font-bold text-slate-200 block">Path A: Bearer Transfer</span>
+                                <span class="text-sm text-slate-500 font-mono">REQUIRE ( User_Signature && Oracle_Ephemeral_Token )</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-yellow-500 mr-3 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            <div>
+                                <span class="font-bold text-slate-200 block">Path B: Sovereign Recovery (SRM)</span>
+                                <span class="text-sm text-slate-500 font-mono">REQUIRE ( MultiSig_2_of_3_GovNodes && 30_Day_TimeLock )</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" onclick="alert('Downloading White Paper v3.2 PDF...')" class="text-yellow-500 font-bold hover:text-yellow-400 flex items-center">
+                        Read full technical specs in the White Paper 
+                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+                <div class="flex-1 w-full bg-slate-900 border border-slate-800 rounded-2xl p-8 relative overflow-hidden shadow-2xl">
+                    <div class="absolute -right-10 -top-10 text-slate-800 opacity-20"><svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+                    <div class="relative z-10 space-y-4">
+                        <div class="p-4 bg-slate-950 border border-slate-700 rounded-xl">
+                            <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Step 1</span>
+                            <p class="text-white font-semibold">Initiate Smart-Escrow P2P Transfer</p>
+                        </div>
+                        <div class="w-0.5 h-6 bg-yellow-600/50 mx-auto"></div>
+                        <div class="p-4 bg-slate-950 border border-yellow-700 rounded-xl shadow-[0_0_15px_rgba(202,138,4,0.15)]">
+                            <span class="text-[10px] uppercase font-bold text-yellow-500 tracking-wider">Step 2: Pre-Transfer Oracle</span>
+                            <p class="text-white font-semibold text-sm mt-1">Autonomous Synthetic Agent verifies identities against OFAC/IRS. Mints ephemeral compliance token.</p>
+                        </div>
+                        <div class="w-0.5 h-6 bg-yellow-600/50 mx-auto"></div>
+                        <div class="p-4 bg-slate-950 border border-slate-700 rounded-xl">
+                            <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Step 3</span>
+                            <p class="text-white font-semibold text-sm mt-1">Ledger validates Primary Path. RVBI transfers. Transfer tax routed instantly to State Treasury.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive ROI Calculator -->
+    <section id="roi" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-6 text-center">State Jurisdiction ROI Simulator</h2>
+            <p class="text-slate-400 text-center mb-12 max-w-2xl mx-auto">Calculate the immediate operational savings by migrating a legacy registry (e.g., DMV titles, Property Deeds) to the Bearer Forge Protocol.</p>
+            
+            <div class="bg-slate-950 p-8 rounded-3xl border border-slate-800 shadow-2xl">
+                <div class="mb-10">
+                    <label class="flex flex-col sm:flex-row justify-between sm:items-center text-sm font-bold text-slate-300 mb-4 gap-4">
+                        <span>Annual Asset Transfer Volume</span>
+                        <span id="vol-display" class="text-yellow-500 text-2xl font-black bg-slate-900 px-4 py-2 rounded-lg border border-slate-800 text-center">500,000 Transactions</span>
+                    </label>
+                    <input type="range" id="vol-slider" min="10000" max="5000000" step="10000" value="500000" class="w-full h-3 bg-slate-900 rounded-lg appearance-none cursor-pointer border border-slate-700 accent-yellow-600">
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800 text-center">
+                        <p class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-2">Legacy Overhead</p>
+                        <p class="text-2xl font-mono text-slate-300" id="cost-legacy">$22,500,000</p>
+                        <p class="text-[10px] text-slate-500 mt-2">Est. $45/tx (Clerical & Paper)</p>
+                    </div>
+                    <div class="p-6 bg-slate-900 rounded-2xl border border-yellow-900 text-center relative overflow-hidden shadow-lg shadow-yellow-900/10">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-yellow-600"></div>
+                        <p class="text-xs uppercase tracking-widest text-yellow-500 font-bold mb-2">Bearer Forge Cost</p>
+                        <p class="text-2xl font-mono text-white font-bold" id="cost-forge">$75,000</p>
+                        <p class="text-[10px] text-slate-400 mt-2">Est. $0.15/tx (Compute API)</p>
+                    </div>
+                    <div class="p-6 bg-gradient-to-br from-green-900/40 to-slate-900 rounded-2xl border border-green-800/50 text-center">
+                        <p class="text-xs uppercase tracking-widest text-green-500 font-bold mb-2">Net Annual Savings</p>
+                        <p class="text-3xl font-mono text-green-400 font-black drop-shadow-[0_0_10px_rgba(74,222,128,0.3)]" id="cost-savings">$22,425,000</p>
+                        <p class="text-[10px] text-green-600/70 mt-2">Immediate Budget Surplus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Roadmap -->
+    <section id="roadmap" class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-16 text-center">Integration & Deployment Roadmap</h2>
+            <div class="space-y-8">
+                
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0 w-16 h-16 rounded-2xl bg-yellow-600/20 border border-yellow-600/50 flex items-center justify-center text-yellow-500 font-black text-xl shadow-lg shadow-yellow-900/20">01</div>
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 flex-1 hover:border-yellow-600/50 transition-colors">
+                        <h3 class="text-xl font-bold text-white mb-2">Phase 1: Shadow Ledger Sandbox</h3>
+                        <p class="text-slate-400 text-sm">Deploy the Legacy-to-Script Adapter (LSA) in a read-only state. Existing SQL/VSAM databases are mirrored in real-time to the cryptographic ledger to validate zero-loss fidelity without interrupting legacy workflows.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0 w-16 h-16 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 font-black text-xl">02</div>
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 flex-1 hover:border-slate-600 transition-colors">
+                        <h3 class="text-xl font-bold text-white mb-2">Phase 2: Single-Asset Pilot</h3>
+                        <p class="text-slate-400 text-sm">Convert a highly illiquid, low-risk state asset (e.g., Commercial Fishing Quotas or specific Fleet Titles) to active RVBIs. Activate the Pre-Transfer Compliance Oracle for live, mathematically enforced P2P transfers.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0 w-16 h-16 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 font-black text-xl">03</div>
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 flex-1 hover:border-slate-600 transition-colors">
+                        <h3 class="text-xl font-bold text-white mb-2">Phase 3: Sovereign Consensus Matrix</h3>
+                        <p class="text-slate-400 text-sm">Fully decouple from legacy mainframes. The protocol becomes the sole, definitive source of truth. Sovereign nodes (Courts, DOJ, DMV) take secure custody of M-of-N keys to enable the Autonomous Sovereign Recovery Agent.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-16 border-t border-slate-800 bg-slate-950 text-center">
+        <h2 class="text-2xl font-bold text-white mb-4">Ready to Modernize the Monopoly?</h2>
+        <p class="text-slate-400 mb-8 max-w-xl mx-auto">Access the full technical specifications, patent filings, and API documentation by downloading the protocol white paper, or contact our enterprise implementation team.</p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <button class="px-8 py-3 bg-yellow-600 text-white font-bold rounded-xl hover:bg-yellow-700 transition-colors shadow-lg">
+                Contact Enterprise Team
+            </button>
+            <button onclick="alert('Downloading White Paper v3.2 PDF...')" class="px-8 py-3 bg-slate-800 text-white font-bold rounded-xl hover:bg-slate-700 border border-slate-700 transition-colors">
+                Download White Paper
+            </button>
+        </div>
+        <p class="text-slate-600 text-xs mt-12">&copy; 2026 Bearer Forge Protocol. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Interactive ROI Calculator Logic
+        const slider = document.getElementById('vol-slider');
+        const display = document.getElementById('vol-display');
+        const costLegacy = document.getElementById('cost-legacy');
+        const costForge = document.getElementById('cost-forge');
+        const costSavings = document.getElementById('cost-savings');
+
+        function updateValues() {
+            const val = parseInt(slider.value);
+            display.textContent = val.toLocaleString() + ' Transactions';
+            
+            // Estimates: Traditional clerical processing vs. Cryptographic API fee
+            const legacy = val * 45; 
+            const forge = val * 0.15;
+            const savings = legacy - forge;
+
+            costLegacy.textContent = '$' + legacy.toLocaleString();
+            costForge.textContent = '$' + forge.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0});
+            costSavings.textContent = '$' + savings.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0});
+        }
+
+        slider.addEventListener('input', updateValues);
+        updateValues(); // Initialize on load
+    </script>
+</body>
+</html>
